@@ -10,7 +10,7 @@ pipeline {
                      ls -lah
                  '''
              }
-	 }
+         }
          stage('Upload to AWS') {
               steps {
                   withAWS(region:'us-west-2',credentials:'TestID') {
